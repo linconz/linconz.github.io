@@ -53,6 +53,8 @@
       
         <li><a href="/archives">归档</a></li>
       
+        <li><a href="/categories">分类</a></li>
+      
     </ul>
   </nav>
 </header>
@@ -101,6 +103,27 @@
     
   </div>
 </article>
+
+  
+	<section id="comment" class="comment">
+		<div id="gitment"></div>
+	</section>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+			owner: 'linconz',
+			repo: 'git@github.com:linconz/linconz.github.io.git',
+			oauth: {
+				client_id: '437ea7191ad7d18ffa39',
+				client_secret: 'b2a1d8d5295094ebd7ec91f9240e1c04a533903b',
+			},
+		})
+		gitment.render('gitment')
+	</script>
+
+
+
 
 
     </main>
